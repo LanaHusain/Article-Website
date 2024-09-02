@@ -137,6 +137,11 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 p {
   font-size: 1.2rem;
   line-height: 1.4rem;
@@ -180,22 +185,50 @@ p {
 }
 
 /* content */
-
 .content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+/* Profil */
+.profil {
+  min-width: 35%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.profil img {
+  grid-area: foto;
+  width: 8rem;
+  float: left;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  box-sizing: border-box;
+}
+
+.profil p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: justify;
+}
+/* Main */
+
+.main {
   margin: 1rem auto;
 }
 
-.content .penulis a {
+.main .penulis a {
   font-weight: bold;
   text-decoration: none;
   color: salmon;
 }
 
-.content h2 {
+.main h2 {
   margin-bottom: 0.8rem;
 }
 
-.content p {
+.main p {
   margin-bottom: 1.2rem;
 }
 
