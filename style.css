@@ -150,9 +150,23 @@ p {
 /* Container */
 .container {
   width: 80%;
-  margin: auto;
+  margin: 80px auto 0;
   background-color: white;
   padding: 1.5rem;
+  position: relative;
+}
+
+.ribbon {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-image: url(img/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -23px;
+  right: -28px;
 }
 
 /* Navbar */
@@ -160,6 +174,7 @@ p {
 .navbar li {
   display: inline-block;
   margin: 1rem 1rem 2rem 0;
+  text-align: center;
 }
 
 .navbar a {
@@ -171,6 +186,7 @@ p {
 .navbar a:hover {
   background-color: lightblue;
   color: black;
+  box-shadow: inset 0 20px 12px -20px rgba(0, 0, 0, 0.5);
 }
 
 /* Hero */
@@ -236,10 +252,11 @@ p {
 .footer {
   background-color: #333;
   color: white;
-  width: 80%;
+  max-width: 80%;
   margin: auto;
   padding: 1.5rem;
   text-align: center;
+  position: relative;
 }
 
 .footer span {
